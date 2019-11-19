@@ -1,0 +1,192 @@
+body {
+    background-color: #ccc;
+    color: #666;
+    font-size: 14px;
+}
+
+input {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.container {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.search {
+    display: flex;
+    height: 44px;
+    border-bottom: 1px solid #999;
+    background-color: #fff;
+}
+
+.search div {
+    flex: 1;
+    height: 30px;
+    margin: 7px 10px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 25px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.search div input {
+    border: none;
+    width: 100%;
+}
+
+.search div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    background: url('../imgs/sprite.png') no-repeat -59px -279px;
+    background-size: 104px;
+}
+
+.search a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a::before {
+    content: "";
+    display: block;
+    width: 23px;
+    margin-bottom: 3px;
+    height: 23px;
+    background: url('../imgs/sprite.png') no-repeat -59px -194px;
+    background-size: 104px;
+}
+
+
+/* banner区 start */
+
+.banner {}
+
+.banner a {
+    display: block;
+}
+
+.banner a img {
+    width: 100%;
+    display: block;
+}
+
+
+/* banner区 end */
+
+
+/* 导航1 start  */
+
+.nav1 {
+    display: flex;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.nav1 a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav1 a div {
+    width: 32px;
+    height: 32px;
+    margin: 5px 0;
+    background: url('../imgs/localnav_bg.png') no-repeat 0 0;
+    background-size: 32px;
+}
+
+.nav1 a:nth-child(2) div {
+    background-position: 0 -32px;
+}
+
+.nav1 a:nth-child(3) div {
+    background-position: 0 -64px;
+}
+
+.nav1 a span {
+    margin-bottom: 10px;
+}
+
+
+/* 导航1 end  */
+
+
+/* 导航2 start  */
+
+.nav2 {
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav2 .nav2_line {
+    height: 88px;
+    display: flex;
+    background: linear-gradient(90deg, red, blue);
+}
+
+.nav2 .nav2_line div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav2 .nav2_line div:nth-child(1) {
+    background: url("../imgs/hotel.png") no-repeat center bottom;
+    background-size: 121px;
+}
+
+.nav2 .nav2_line div:nth-child(2) {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.nav2 .nav2_line div a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+
+.nav2 .nav2_line div a:nth-child(2) {
+    border-top: 1px solid #fff;
+}
+
+
+/* 导航2 end  */
+
+
+/* nav3的 */
+
+.nav3 {
+    flex-wrap: wrap;
+}
+
+.nav3 a {
+    flex: 20%;
+}

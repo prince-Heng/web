@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="txt">
+    <input type="button" value="点击发布留言" id="btn">
+    <ul>
+        <li>1</li>
+    </ul>
+
+    <script type="text/javascript">
+        // 字符串
+        // var str = '   abcd ef ga bcd   ';
+        // console.log(str);
+        // str = str.trim();
+        // console.log(str);
+
+        var btn = document.getElementById('btn');
+        var txt = document.getElementById('txt');
+        var ul = document.querySelector('ul');
+
+        btn.onclick = function() {
+
+            // 获取内容
+            var val = txt.value;
+            // 去除两边空白
+            val = val.trim();
+            if (val.length > 0) {
+                // 创建li
+                var li = document.createElement('li');
+                // 追加到ul
+                ul.appendChild(li);
+                // 添加内容
+                li.innerText = val;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
